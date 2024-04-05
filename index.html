@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Final Project</title>
+  <link href='/style.css' rel='stylesheet'>
+</head>
+
+<body>
+  <span id="weather-text">Unknow</span>
+  <div id="app">
+    <form id="account-form" class="accountForm">
+      <h3>ACCOUNT</h3>
+      <h2>What's Your Name?</h1>
+      <input id="user-name" class="inputText" type="text" minlength="2" maxlength="12"/>
+    </form>
+    <div id="contents-container" class="contentsContainer">
+      <h1 id="clock"></h1>
+      <h3 id="welcome-message"></h3>
+      <div id="todos">
+        <h5 class="todoTitle">TODAY</h5>
+        <h4 id="first-todo-title" class="firstSubTitle hidden">What is your main goal fo today?</h4>
+        <div id="todo-list"></div>
+        <form id="todo-form" class="todoForm">
+          <input id="todo" class="inputText" type="text" minlength="1" maxlength="24"/>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="wishSayingContainer">
+    <h4 id="wish-saying" class="wishSaying"></h4>
+  </div>
+  <script src='/images.js'></script>
+  <script src='/main.js'></script>
+  <script src='/todos.js'></script>
+  <script src='/weather.js'></script>
+</body>
+
+</html>
